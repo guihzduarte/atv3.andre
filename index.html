@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Estágios - Divulgação de Vagas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Seção Principal (Landing Page) -->
+  <header>
+    <h1>Portal de Estágios Universitários</h1>
+    <p>Conectando estudantes às melhores oportunidades do mercado. Cadastre uma vaga abaixo e divulgue gratuitamente para toda a comunidade acadêmica.</p>
+  </header>
+
+  <main class="container">
+    <!-- Formulário de Cadastro -->
+    <section class="card">
+      <h2>Cadastrar Nova Vaga de Estágio</h2>
+      <form id="form-vaga">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="cargo">Título da Vaga / Área *</label>
+            <input type="text" id="cargo" placeholder="Ex: Estágio em Desenvolvimento Web" required>
+          </div>
+
+          <div class="form-group">
+            <label for="empresa">Empresa *</label>
+            <input type="text" id="empresa" placeholder="Ex: Tech Solutions Ltda" required>
+          </div>
+
+          <div class="form-group">
+            <label for="bolsa">Bolsa-Auxílio (R$) *</label>
+            <input type="text" id="bolsa" placeholder="Ex: R$ 1.200,00" required>
+          </div>
+
+          <div class="form-group">
+            <label for="modalidade">Modalidade *</label>
+            <select id="modalidade" required>
+              <option value="Presencial">Presencial</option>
+              <option value="Híbrido">Híbrido</option>
+              <option value="Remoto">Remoto</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contato">E-mail para Envio de Currículo *</label>
+            <input type="email" id="contato" placeholder="Ex: rh@empresa.com" required>
+          </div>
+        </div>
+
+        <button type="submit">Publicar Vaga na Tabela</button>
+      </form>
+    </section>
+
+    <!-- Tabela de Divulgação -->
+    <section class="card">
+      <h2>Vagas de Estágio Disponíveis</h2>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Vaga</th>
+              <th>Empresa</th>
+              <th>Bolsa-Auxílio</th>
+              <th>Modalidade</th>
+              <th>Contato</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-vagas">
+            <!-- Vaga inicial de exemplo -->
+            <tr>
+              <td><strong>Estágio em Suporte de TI</strong></td>
+              <td>Inova Sistemas</td>
+              <td>R$ 1.100,00</td>
+              <td><span class="badge">Híbrido</span></td>
+              <td>vagas@inovasistemas.com.br</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Portal de Estágios - Atividade Prática Universitária</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
